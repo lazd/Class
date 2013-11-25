@@ -130,7 +130,7 @@
 	Mixin: Doing stuff
 */</code>
 
-<h3>5. Check yo' self</h3>
+<h3>6. Check yo' self</h3>
 <p>Mixins can be added after the class is instantiated.</p>
 <code class="prettyprint">child.mixin({
 	doMoreStuff: function() {
@@ -143,17 +143,12 @@ child.doMoreStuff();
 	Child: Doing more stuff
 */</code>
 
-<h3>5. Wreck yo' self</h3>
+<h3>7. Wreck yo' self</h3>
 <p><span class="code"><span class="typ">destruct</span>()</span> is automatically chained, and the Childs's method is called first.</p>
-<code class="prettyprint">child.mixin({
-	doMoreStuff: function() {
-		console.log(this+': Doing more stuff')
-	}
-});
-
-child.doMoreStuff();
+<code class="prettyprint">child.destruct();
 /* Output:
-	Child: Doing more stuff
+	Child: Destructing
+	Parent: Destructing
 */</code>
 			</section>
 		</section>
